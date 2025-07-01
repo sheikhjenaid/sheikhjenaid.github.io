@@ -1,56 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Me</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f5f7fa;
-      color: #333;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .container {
-      background: white;
-      padding: 2rem 3rem;
-      border-radius: 10px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-      max-width: 400px;
-      text-align: center;
-    }
-    h1 {
-      color: #007acc;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-top: 0;
-    }
-    .profile-pic {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      margin-bottom: 1.5rem;
-      object-fit: cover;
-      border: 3px solid #007acc;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About Me</title>
+<style>
+  /* Black and White Theme */
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .container {
+    max-width: 450px;
+    padding: 2rem;
+    background: #111;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 15px #fff;
+  }
+  h1 {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid #fff;
+    padding: 0.5rem 1.2rem;
+    margin: 0.3rem;
+    display: inline-block;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  a:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  .contact-info {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+</style>
 </head>
 <body>
   <div class="container">
-    <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
-    <h1>Hi, I'm Sheikh Junaid</h1>
+    <h1>Hello, I'm Sheikh Junaid</h1>
     <p>
-     I enjoy traveling, hanging out with friends, and playing cricket.  
-      Welcome to my personal site!
+      Passionate about tech, cricket, and hanging out with friends.  
+      Welcome to my personal page!
     </p>
+
+    <div class="links">
+      <a href="friends.html" target="_blank" rel="noopener">Friends Page</a>
+      <a href="cricketteam.html" target="_blank" rel="noopener">Cricket Team</a>
+      <a href="mailto:sheikhjenaid@outlook.com">Email Me</a>
+    </div>
+
+    <div class="contact-info">
+      <p><strong>Email:</strong> sheikhjenaid@outlook.com</p>
+      <p><strong>Phone:</strong> +91 9796336336</p>
+      <p><strong>Location:</strong> Srinagar,J&K</p>
+    </div>
   </div>
 </body>
 </html>

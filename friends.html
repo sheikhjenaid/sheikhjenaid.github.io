@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Friends</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 700px;
+      padding: 2rem;
+      background: #111;
+      border: 2px solid #fff;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 15px #fff;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    .friend-list {
+      text-align: left;
+      padding-left: 1rem;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .friend-list li {
+      margin-bottom: 1rem;
+    }
+    .friend-name {
+      font-weight: bold;
+      color: #fff;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #fff;
+      text-decoration: none;
+      border: 2px solid #fff;
+      padding: 0.5rem 1.2rem;
+      border-radius: 6px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .back-link:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>👬 My Friends</h1>
+    <p>
+      This page is dedicated to my closest friends — the people I laugh with, play cricket with, and go on spontaneous trips with. These friendships mean everything to me.
+    </p>
+
+    <ul class="friend-list">
+      <li><span class="friend-name">Asif Iqbal:</span> Always the planner. Organizes every trip and never forgets the snacks.</li>
+      <li><span class="friend-name">Faizan Wani:</span> The joker of the group. Brings life and energy to every hangout.</li>
+      <li><span class="friend-name">Younis Ismail:</span> Calm and thoughtful. Great batsman and even better advice-giver.</li>
+      <li><span class="friend-name">Mudasir Bhat:</span> Our fastest bowler and the most loyal friend you could ask for.</li>
+      <li><span class="friend-name">Naseer Baba:</span> The tech guy — edits our cricket videos and builds cool things online.</li>
+    </ul>
+
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </div>
+</body>
+</html>

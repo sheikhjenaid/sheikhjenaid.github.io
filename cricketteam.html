@@ -15,7 +15,14 @@
       align-items: center;
       min-height: 100vh;
       padding: 2rem;
+      animation: fadeInBody 2s ease-in-out;
     }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     .container {
       max-width: 700px;
       padding: 2rem;
@@ -24,25 +31,42 @@
       border-radius: 12px;
       text-align: center;
       box-shadow: 0 0 15px #fff;
+      animation: slideIn 1.5s ease-in-out;
     }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
     h1 {
       font-size: 2rem;
       margin-bottom: 1rem;
     }
+
     .team-desc {
       margin-bottom: 1.5rem;
       font-size: 1rem;
       line-height: 1.6;
     }
+
     .team-list {
       text-align: left;
       padding-left: 1rem;
       margin: 1rem auto;
       display: inline-block;
+      animation: fadeInList 2s ease-in;
     }
+
+    @keyframes fadeInList {
+      from { opacity: 0; transform: translateX(-20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
     .team-list li {
       margin-bottom: 0.4rem;
     }
+
     .updates {
       margin-top: 2rem;
       text-align: left;
@@ -51,27 +75,34 @@
       border-radius: 8px;
       border: 1px dashed #fff;
     }
+
     .updates h2 {
       margin-top: 0;
       color: #fff;
     }
+
     .updates p {
       font-size: 0.95rem;
       line-height: 1.5;
     }
-    a {
+
+    .call-btn {
       display: inline-block;
       margin-top: 2rem;
-      color: #fff;
-      text-decoration: none;
-      border: 2px solid #fff;
-      padding: 0.5rem 1.2rem;
-      border-radius: 6px;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    a:hover {
-      background-color: #fff;
       color: #000;
+      background-color: #00ff7f;
+      text-decoration: none;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 0 10px #00ff7f;
+    }
+
+    .call-btn:hover {
+      background-color: #00cc66;
+      box-shadow: 0 0 15px #00cc66;
     }
   </style>
 </head>
@@ -107,7 +138,8 @@
       </p>
     </div>
 
-    <a href="index.html">← Back to Home</a>
+    <!-- 📞 Call Captain Button -->
+    <a class="call-btn" href="tel:+919876543210">📞 Call Captain Tahir</a>
   </div>
 </body>
 </html>

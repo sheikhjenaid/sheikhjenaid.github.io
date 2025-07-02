@@ -4,6 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FCC 🏏 | Friends Cricket Club</title>
+
+  <!-- Meta for Social Sharing -->
+  <meta property="og:title" content="FCC 🏏 | Friends Cricket Club" />
+  <meta property="og:description" content="Official page of FCC — Friends Cricket Club from Ganderbal. Meet the team, see match updates, and connect via Cricheroes!" />
+  <meta property="og:url" content="https://asdiqa.in" />
+  <meta name="theme-color" content="#000000" />
+
   <style>
     body {
       margin: 0;
@@ -67,7 +74,7 @@
       margin-bottom: 0.4rem;
     }
 
-    .updates {
+    .updates, .cricheroes-section {
       margin-top: 2rem;
       text-align: left;
       background-color: #1a1a1a;
@@ -76,12 +83,12 @@
       border: 1px dashed #fff;
     }
 
-    .updates h2 {
+    .updates h2, .cricheroes-section h2 {
       margin-top: 0;
       color: #fff;
     }
 
-    .updates p {
+    .updates p, .cricheroes-section p {
       font-size: 0.95rem;
       line-height: 1.5;
     }
@@ -104,6 +111,15 @@
       background-color: #00cc66;
       box-shadow: 0 0 15px #00cc66;
     }
+
+    a {
+      color: #00ff7f;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -117,7 +133,11 @@
     <h2>Team Members:</h2>
     <ul class="team-list">
       <li>Tahir (C)</li>
-      <li>Sheikh Junaid (Jimmy)</li>
+      <li>
+        <a href="https://cricheroes.com/player-profile/7652118/sheikh-junaid-(jimmy)/matches" target="_blank">
+          Sheikh Junaid (Jimmy)
+        </a>
+      </li>
       <li>Shah Ajaz</li>
       <li>Sheikh Fuzail (Oldest Member)</li>
       <li>Taufeeq (Wk)</li>
@@ -138,8 +158,22 @@
       </p>
     </div>
 
-    <!-- 📞 Call Captain Button -->
-    <a class="call-btn" href="tel:+919622">📞 Call Tiger for Schedule</a>
+    <div class="cricheroes-section">
+      <h2>📊 Cricheroes Profiles</h2>
+      <p>
+        View our full team lineup and stats on Cricheroes:<br />
+        🔗 <a href="https://cricheroes.com/team-profile/5931161/fcc-nowhata/members" target="_blank">
+          FCC Nowhata Team Profile
+        </a>
+      </p>
+      <p>
+        ⭐ See <a href="https://cricheroes.com/player-profile/7652118/sheikh-junaid-(jimmy)/matches" target="_blank">
+          Sheikh Junaid's Player Profile</a> — stats, matches, and more!
+      </p>
+    </div>
+
+    <!-- 📞 Call Button -->
+    <a class="call-btn" href="tel:+919622000000">📞 Call Tiger for Schedule</a>
   </div>
 </body>
 </html>

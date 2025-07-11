@@ -4,72 +4,139 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Friends</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #000;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #000428, #004e92);
       color: #fff;
+      padding: 2rem;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
     }
     .container {
-      max-width: 700px;
+      max-width: 960px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
       padding: 2rem;
-      background: #111;
-      border: 2px solid #fff;
-      border-radius: 12px;
-      text-align: center;
-      box-shadow: 0 0 15px #fff;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
     }
     h1 {
-      font-size: 2rem;
+      text-align: center;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
     }
-    p {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 1.5rem;
+    p.description {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #d0d0d0;
     }
-    .friend-list {
-      text-align: left;
-      padding-left: 1rem;
-      display: inline-block;
-      margin-top: 1rem;
+    .friend-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
     }
-    .friend-list li {
-      margin-bottom: 1rem;
+    .card {
+      background-color: rgba(255, 255, 255, 0.08);
+      border: 1px solid #fff2;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
     }
     .friend-name {
-      font-weight: bold;
-      color: #fff;
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+    }
+    .friend-name span {
+      margin-right: 0.5rem;
+      font-size: 1.5rem;
+    }
+    .friend-description {
+      font-size: 0.95rem;
+      color: #ddd;
     }
     .back-link {
       display: inline-block;
       margin-top: 2rem;
-      color: #fff;
+      text-align: center;
       text-decoration: none;
+      color: #fff;
       border: 2px solid #fff;
-      padding: 0.5rem 1.2rem;
-      border-radius: 6px;
-      transition: background-color 0.3s, color 0.3s;
+      padding: 0.6rem 1.5rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      font-weight: 600;
     }
     .back-link:hover {
       background-color: #fff;
-      color: #000;
+      color: #000428;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>👬 My Friends</h1>
-    <p>
-      This page is dedicated to my closest friends — the people I laugh with, play cricket with, and go on spontaneous trips with. These friendships mean everything to me.
+    <p class="description">
+      A tribute to the unforgettable people who fill my life with laughter, loyalty, and chaos.
     </p>
 
-    <a href="index.html" class="back-link">← Back to Home</a>
+    <div class="friend-cards">
+      <div class="card">
+        <div class="friend-name"><span>🐍</span>Asif Iqbal</div>
+        <div class="friend-description">
+          Asif is the heart of our group’s energy — always full of ideas, pranks, and unexpected twists. He can turn a dull moment into laughter with his clever wit. Mischievous at times, yes, but he’s the one who’ll always show up when you need him. Loyal, sharp, and unforgettable.
+        </div>
+      </div>
+      <div class="card">
+        <div class="friend-name"><span>😠</span>Junaid Shah</div>
+        <div class="friend-description">
+          Quiet but impactful, Junaid has a presence that’s felt even when he’s not around. Reserved with his words but rich in wisdom and depth, he chooses his moments carefully. A deep thinker, loyal friend, and someone who values real connections over small talk.
+        </div>
+      </div>
+      <div class="card">
+        <div class="friend-name"><span>💸</span>Younis Ismail</div>
+        <div class="friend-description">
+          Stylish, thoughtful, and always a little mysterious — Younis blends confidence with curiosity. He keeps us thinking, laughing, and sometimes guessing what’s next. Behind that luxury-loving exterior is a sincere friend who values truth and trust above all.
+        </div>
+      </div>
+      <div class="card">
+        <div class="friend-name"><span>💼</span>Mudasir Bhat</div>
+        <div class="friend-description">
+          A born leader with an entrepreneurial spirit, Mudasir is the guy you go to when you need solid advice or just someone to believe in you. Dependable, driven, and respectful — he balances ambition with humility. And yes, a true gentleman when the queen (his wife) is around! 😉
+        </div>
+      </div>
+      <div class="card">
+        <div class="friend-name"><span>🔧</span>Naseer Baba</div>
+        <div class="friend-description">
+          A bundle of chaos wrapped in good intentions! Naseer is that friend who adds unpredictability to every plan — and we wouldn’t have it any other way. Always busy, always in motion, and somehow always there when it counts. He reminds us that every group needs a little madness and a lot of heart.
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center;">
+      <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
   </div>
 </body>
 </html>
